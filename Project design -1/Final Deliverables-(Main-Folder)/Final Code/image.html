@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css" />
+  <title>Upload</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+  <input type="file" id="myFile" name="filename">
+  <input type="Submit">
+</form>
+{% if resulttext != "" %}
+        <div id="Disaster Prediction">
+            <h1>Prediction</h1>
+            <p id="image">{{ resulttext }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>
